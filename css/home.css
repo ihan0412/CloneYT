@@ -1,0 +1,137 @@
+html {
+    font-size: 16px; /* 전체 글자 크기 */
+}
+body {
+    background-color: #0f0f0f; /* 배경색 */
+    color: #ffffff; /* 기본 글자색 */
+    overflow-x: hidden;
+}
+
+/* 로고 이미지 */
+.ytlogo {
+    width: 140px;
+    height: 35px;
+    object-fit: cover;
+}
+
+/* -------------------- 네비게이션 바 스타일 -------------------- */
+.navbar {
+    background-color: #0f0f0f; /* 네비게이션 바 배경색 */
+    border-bottom: 1px solid #303030; /* 하단 경계선 */
+    padding: 0.5rem 0rem;
+}
+
+.navbar-toggler {
+    border-radius: 50%; /* 완전한 둥근 모양 */
+    border: none; /* 테두리 제거 */
+    outline: none;
+    width: 40px; /* 버튼의 너비 (아이콘 크기에 맞춰 조절) */
+    height: 40px; /* 버튼의 높이 (아이콘 크기에 맞춰 조절) */
+    display: flex; /* 내부 아이콘을 가운데 정렬하기 위해 flexbox 사용 */
+    justify-content: center; /* 가로 가운데 정렬 */
+    align-items: center; /* 세로 가운데 정렬 */
+    padding: 0; /* 내부 패딩 제거 (아이콘이 꽉 차게 보이도록) */
+    background-color: transparent; /* 배경색 투명하게 */
+
+}
+
+/* 햄버거 아이콘 색상 변경 */
+.navbar-toggler-icon,
+.toggle-button
+{
+    /* SVG 이미지에 색상을 적용하기 위해 filter 속성 사용 */
+    filter: invert(33%) sepia(0%) saturate(1%) hue-rotate(189deg) brightness(80%) contrast(90%);
+    /* 이 필터 값은 #808080 (회색)에 가깝게 변환합니다. */
+}
+
+/* offcanvas 버튼에 */
+.navbar-toggler:hover,
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    border:none !important;
+    box-shadow: none !important;
+    background-color: rgba(255, 255, 255, 0.1); /* 약간 투명한 흰색 배경 */
+}
+
+
+/* ------------------ 검색창 스타일 ------------------ */
+.search-bar {
+    flex-grow: 1; /* 남은 공간 차지 */
+    max-width: 800px; /* 최대 너비 */
+    margin: 0 auto; /* 가운데 정렬 */
+    border-radius: 20px;
+    background-color: #0f0f0f;
+    border: 1px solid #424242;
+    overflow: hidden; /*원형 테두리 삐져나오는거 빼기*/
+}
+
+.search-bar .form-control {
+    border: none;
+    border-radius: 0; /* 개별 요소의 둥근 모서리 제거 */
+    box-shadow: none;
+    background-color: #0f0f0f;
+    padding-left: 15px;
+}
+
+.search-bar .btn {
+    border: none;
+    border-radius: 0; /* 개별 요소의 둥근 모서리 제거 */
+    border-left: 1px solid #424242;
+}
+
+.search-bar .form-control::placeholder {
+    color: #aaaaaa; /* 플레이스홀더 글자색 */
+}
+
+/* -------------------- 드롭다운 메뉴 스타일 -------------------- */
+.dropdown-menu {
+    background-color: #282828; /* 드롭다운 배경색 */
+    border: 1px solid #424242; /* 드롭다운 테두리 */
+}
+
+.dropdown-item {
+    color: #ffffff; /* 드롭다운 아이템 글자색 */
+}
+
+.dropdown-item:hover {
+    background-color: #383838; /* 드롭다운 아이템 호버 시 배경색 */
+    color: #ffffff;
+}
+/*드롭다운 화살표 숨기기*/
+.dropdown-toggle::after {
+    display: none;
+}
+
+/* 사용자 프로필 이미지 (자리 표시자) */
+.profile-img-placeholder {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%; /* 원형 */
+    background-color: #606060; /* 임시 색상 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* -------------------- Offcanvas 스타일 -------------------- */
+.offcanvas-start {
+    background-color: #151515; /* Offcanvas 배경색 */
+    color: #ffffff; /* Offcanvas 글자색 */
+    width: 240px; /* Offcanvas 너비 */
+}
+.offcanvas-header {
+    border-bottom: 1px solid #151515; /* Offcanvas 헤더 하단 경계선 */
+}
+.offcanvas-title {
+    color: #ffffff;
+}
+.offcanvas-body .nav-link {
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+}
+.offcanvas-body .nav-link:hover {
+    background-color: #383838;
+}

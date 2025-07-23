@@ -1,11 +1,7 @@
 # CloneYT
 CloneYT
 
+7.23
+사이드바를 만들다 보니 중복되는 요소들이 많이 생기는데, 이는 웹 컴포넌틀 통해 해결 가능하다.
+자세한 방법은 내일 알아보자
 
-7.22
-![focusimg.png](readmeimg/focusimg.png)
-
-focus 가 있는 nav toggle icon 의 검은색 테두리가 없어지질 않는다... <br>
-outline: none; <br>
-box-shadow: none;  <br>
-다 먹통이다....

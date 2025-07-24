@@ -1,6 +1,7 @@
 html {
     font-size: 16px; /* 전체 글자 크기 */
 }
+
 body {
     background-color: #0f0f0f; /* 배경색 */
     color: #ffffff; /* 기본 글자색 */
@@ -51,7 +52,7 @@ body {
 .navbar-toggler:hover,
 .navbar-toggler:focus,
 .navbar-toggler:active {
-    border:none !important;
+    border: none !important;
     box-shadow: none !important;
     background-color: rgba(255, 255, 255, 0.1);
 }
@@ -104,6 +105,7 @@ body {
     background-color: #383838; /* 드롭다운 아이템 호버 시 배경색 */
     color: #ffffff;
 }
+
 /*드롭다운 화살표 숨기기*/
 .dropdown-toggle::after {
     display: none;
@@ -133,6 +135,7 @@ body {
     height: 100vh;
     overflow-y: auto; /* 내용이 넘칠 경우 스크롤바 생성 */
 }
+
 /*축소 사이드바*/
 .reduce-sidebar {
     width: 100px;
@@ -142,6 +145,7 @@ body {
     left: 0;
     height: 100vh;
 }
+
 /* 메인 콘텐츠 영역 */
 .main-content {
     flex-grow: 1; /* 남은 공간을 모두 차지하도록 함 */
@@ -170,28 +174,31 @@ body {
     align-items: center;
     white-space: nowrap; /* 텍스트가 한 줄로 유지되도록 */
     font-size: 0.95rem;
-    margin-right: 0.25rem;
-    margin-left: 0.25rem;
 }
+
 .expand-sidebar .nav-link:hover {
     background-color: #383838;
 }
+
 .expand-sidebar .nav-link i {
     margin-right: 15px;
     width: 24px;
     text-align: center;
     font-size: 1.2rem;
 }
+
 .expand-sidebar hr {
     border-color: rgba(255, 255, 255, 0.1);
     margin: 10px 20px;
 }
+
 .expand-sidebar .sidebar-heading {
     font-size: 0.8em;
     color: #aaa;
     padding: 10px 20px 5px;
     text-transform: uppercase;
 }
+
 /*html 컴포넌트 관리 이전 임시*/
 .offcanvas-body .sidebar-heading {
     font-size: 0.8em;
@@ -204,17 +211,20 @@ body {
 .reduce-sidebar {
     display: none; /* 기본적으로는 숨김 */
 }
+
 .reduce-sidebar .nav-link:hover {
     background-color: #383838;
 }
+
 .reduce-sidebar .nav-link {
     display: flex;
     flex-direction: column; /* 세로 정렬: 요소를 수직으로 쌓음 */
-    align-items: center;    /* 수평 중앙 정렬: 교차 축(여기서는 수평)을 따라 중앙에 정렬 */
+    align-items: center; /* 수평 중앙 정렬: 교차 축(여기서는 수평)을 따라 중앙에 정렬 */
     justify-content: center; /* 수직 중앙 정렬: 주 축(여기서는 수직)을 따라 중앙에 정렬 */
     padding: 10px 0;
     color: #ffffff;
 }
+
 /* 축소 사이드바 내의 이미지 스타일 조정 */
 .reduce-sidebar .nav-link img {
     margin-right: 0 !important; /* me-3 클래스에 의해 적용된 margin-right를 0으로 재정의 */
@@ -226,111 +236,85 @@ body {
 body.expanded-sidebar .expand-sidebar {
     display: block; /* 확장 사이드바 보임 */
 }
+
 body.expanded-sidebar .reduce-sidebar {
     display: none; /* 축소 사이드바 숨김 */
 }
+
 body.expanded-sidebar .main-content {
     margin-left: 240px; /* 확장된 사이드바(240px)만큼 콘텐츠를 오른쪽으로 밉니다. */
     width: calc(100% - 240px); /* 메인 콘텐츠는 뷰포트 너비에서 사이드바 너비를 뺀 공간을 차지합니다. */
 }
+
 body.reduced-sidebar .reduce-sidebar {
     display: block; /* 축소 사이드바 보임 */
 }
+
 body.reduced-sidebar .main-content {
     margin-left: 100px; /* 확장 사이드바 너비만큼 메인 콘텐츠 밀기 */
 }
+
 body.reduced-sidebar .main-content {
     margin-left: 100px; /* 축소된 사이드바(100px)만큼 콘텐츠를 오른쪽으로 밉니다. */
     width: calc(100% - 100px); /* 메인 콘텐츠는 뷰포트 너비에서 사이드바 너비를 뺀 공간을 차지합니다. */
 }
-/* -------------------- Offcanvas 스타일 -------------------- */
-/* 큰 화면 (1200px 이상) 에서만 적용: offcanvas 숨기기 -> 미디어 쿼리로 반응형 구현*/
-@media (min-width: 1200px) {
-    .offcanvas {
-        visibility: hidden !important; /* 요소를 숨기지만 공간은 차지하지 않음 (flexbox에서) */
-        transform: translateX(-100%) !important; /* 화면 밖으로 완전히 이동 */
-        display: none !important; /* 공간 차지하지 않도록 숨김 */
-    }
-    /* Offcanvas를 여는 햄버거 버튼 큰 화면에서 숨기기 */
-    #offcanvasToggle {
-        display: none !important;
-    }
-    /* 데스크톱 사이드바 토글 버튼 보이게 */
-    .desktop-sidebar-toggler {
-        display: block !important;
-    }
-    /* 초기 로드 시 또는 리사이즈 시 확장 사이드바를 보이게 설정 (body.expanded-sidebar에 의해 제어) */
-    body.expanded-sidebar .expand-sidebar {
-        display: block;
-    }
-    body.expanded-sidebar .reduce-sidebar {
-        display: none;
-    }
-    body.reduced-sidebar .expand-sidebar {
-        display: none;
-    }
-    body.reduced-sidebar .reduce-sidebar {
-        display: block;
-    }
+
+.reduce-sidebar,
+.expand-sidebar,
+#sidebarToggle {
+    display: none !important;
 }
 
-.homebutton {
-    border-radius: 5px;
+.offcanvas-header {
+    height: 63px;
+}
+
+.offcanvas-start {
+    --bs-offcanvas-width: 300px; /*너비 설정-> 상위 설정*/
+    background-color: #0f0f0f;
+    color: #ffffff;
+}
+
+.offcanvas-body .nav-link {
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+}
+
+.offcanvas-body .nav-link:hover { /*마우스 올려놓았을 때*/
     background-color: #383838;
 }
-/*작은 화면: sidebar toggle 숨기기 */
-@media (max-width: 1199.98px) {
-    /*sidebarToggle 의 기능 navbar 교체하기*/
-    .reduce-sidebar,
-    .expand-sidebar,
-    #sidebarToggle {
-        display: none !important;
-    }
-    .offcanvas-header {
-        height: 63px;
-    }
-    .offcanvas-start {
-        --bs-offcanvas-width: 300px; /*너비 설정-> 상위 설정*/
-        background-color: #0f0f0f;
-        color: #ffffff;
-    }
-    .offcanvas-body .nav-link {
-        color: #ffffff;
-        padding: 0.5rem 1rem;
-    }
-    .offcanvas-body .nav-link:hover { /*마우스 올려놓았을 때*/
-        background-color: #383838;
-    }
-    .btn-close {
-        width: 20px;
-        filter: invert(33%) sepia(0%) saturate(1%) hue-rotate(189deg) brightness(80%) contrast(90%);
-    }
 
-    /* offcanvas 버튼 focus 지우기*/
-    /* offcanvas 버튼 focus 지우기*/
-    .btn-close:hover,
-    .btn-close:focus,
-    .btn-close:active {
-        border:none !important;
-        box-shadow: none !important;
-        background-color: rgba(255, 255, 255, 0.1); /* 약간 투명한 흰색 배경 */
-    }
-
-    /*사이드바로 설정된 공백 지우기*/
-    body.expanded-sidebar .main-content {
-        margin-left: 0px; /* 확장 사이드바 너비만큼 메인 콘텐츠 밀기 */
-    }
-    body.reduced-sidebar .main-content {
-        margin-left: 0px; /* 확장 사이드바 너비만큼 메인 콘텐츠 밀기 */
-    }
-    .main-content {
-        margin-left: 0px !important; /* 작은 화면에서는 마진 없음 */
-        width: 100% !important; /* 전체 너비 차지 */
-    }
+.btn-close {
+    width: 20px;
+    filter: invert(33%) sepia(0%) saturate(1%) hue-rotate(189deg) brightness(80%) contrast(90%);
 }
 
-/*사이드바 스크롤 바 설정*/
+/* offcanvas 버튼 focus 지우기*/
+/* offcanvas 버튼 focus 지우기*/
+.btn-close:hover,
+.btn-close:focus,
+.btn-close:active {
+    border: none !important;
+    box-shadow: none !important;
+    background-color: rgba(255, 255, 255, 0.1); /* 약간 투명한 흰색 배경 */
+}
 
+/*사이드바로 설정된 공백 지우기*/
+body.expanded-sidebar .main-content {
+    margin-left: 0px; /* 확장 사이드바 너비만큼 메인 콘텐츠 밀기 */
+}
+
+body.reduced-sidebar .main-content {
+    margin-left: 0px; /* 확장 사이드바 너비만큼 메인 콘텐츠 밀기 */
+}
+
+.main-content {
+    margin-left: 0px !important; /* 작은 화면에서는 마진 없음 */
+    width: 100% !important; /* 전체 너비 차지 */
+}
+
+
+/*사이드바 스크롤 바 설정*/
 .reduce-sidebar::-webkit-scrollbar,
 .expand-sidebar::-webkit-scrollbar {
     width: 8px; /* 스크롤바의 너비 */
@@ -341,6 +325,7 @@ body.reduced-sidebar .main-content {
     background: #282828; /* 스크롤바 트랙(바탕) 색상 */
     border-radius: 10px; /* 트랙 모서리 둥글게 (선택 사항) */
 }
+
 .reduce-sidebar::-webkit-scrollbar-thumb,
 .expand-sidebar::-webkit-scrollbar-thumb {
     background-color: #606060; /* 스크롤바 썸(움직이는 부분) 색상 */

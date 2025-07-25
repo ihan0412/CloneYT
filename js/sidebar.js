@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="offcanvas-body">
             <ul class="nav flex-column">
                 <li class="nav-item">
-                    <a class="nav-link active homebutton" aria-current="page" href="#" aria-label="홈">
+                    <a class="nav-link active homebutton" aria-current="page" href="index.html" aria-label="홈">
                         <img src="img/home.png" class="rounded-circle me-3" width="24" height="24" alt="">
                         <span>홈</span>
                     </a>
@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link subbutton" href="#" aria-label="구독">
+                    <a class="nav-link subbutton" href="sub.html" aria-label="구독">
                         <img src="img/sub.png" class="rounded-circle me-3" width="24" height="24" alt="">
                         <span>구독</span>
                     </a>
@@ -272,7 +272,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="py-2">
             <ul class="nav flex-column">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#" aria-label="홈">
+                    <a class="nav-link active" aria-current="page" href="index.html" aria-label="홈">
                         <img src="img/home.png" class="rounded-circle me-3" width="36" height="36"> <span>홈</span>
                     </a>
                 </li>
@@ -283,7 +283,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" aria-label="구독">
+                    <a class="nav-link" href="sub.html" aria-label="구독">
                         <img src="img/sub.png" class="rounded-circle me-3" width="36" height="36"> <span>구독</span>
                     </a>
                 </li>
@@ -301,7 +301,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="py-2">
             <ul class="nav flex-column">
                 <li class="nav-item">
-                    <a class="nav-link active homebutton" aria-current="page" href="#" aria-label="홈">
+                    <a class="nav-link active homebutton" aria-current="page" href="index.html" aria-label="홈">
                         <img src="img/home.png" class="rounded-circle me-3" width="24" height="24"> <span>홈</span>
                     </a>
                 </li>
@@ -312,7 +312,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link subbutton" href="#" aria-label="구독">
+                    <a class="nav-link subbutton" href="sub.html" aria-label="구독">
                         <img src="img/sub.png" class="rounded-circle me-3" width="24" height="24"> <span>구독</span>
                     </a>
                 </li>

@@ -1,6 +1,6 @@
 const videoData = [
     {
-        index: 1,
+        videoId: 1,
         adress: "https://www.youtube.com/watch?v=z3aS5AwhJSU",
         thumbnail: 'https://img.youtube.com/vi/9CSjtzOueFo/mqdefault.jpg',
         duration: '1:01:47',
@@ -11,7 +11,7 @@ const videoData = [
         uploadDate: '2주 전'
     },
     {
-        index: 2,
+        videoId: 2,
         adress: "https://www.youtube.com/watch?v=xlaPti4ElCk",
         thumbnail: 'https://img.youtube.com/vi/xlaPti4ElCk/mqdefault.jpg',
         duration: '2:34:48',
@@ -22,7 +22,7 @@ const videoData = [
         uploadDate: '8개월 전'
     },
     {
-        index: 3,
+        videoId: 3,
         adress: "https://www.youtube.com/watch?v=_41K4CpsZwg",
         thumbnail: 'https://img.youtube.com/vi/_41K4CpsZwg/mqdefault.jpg',
         duration: '1:15:48',
@@ -33,7 +33,7 @@ const videoData = [
         uploadDate: '3년 전'
     },
     {
-        index: 4,
+        videoId: 4,
         adress: "https://www.youtube.com/watch?v=bnWHWV2kFhg",
         thumbnail: 'https://img.youtube.com/vi/bnWHWV2kFhg/mqdefault.jpg',
         duration: '18:22',
@@ -44,7 +44,7 @@ const videoData = [
         uploadDate: '3일 전'
     },
     {
-        index: 5,
+        videoId: 5,
         adress: "https://www.youtube.com/watch?v=0e9zSMOhhm0",
         thumbnail: 'https://img.youtube.com/vi/0e9zSMOhhm0/mqdefault.jpg',
         duration: '19:53',
@@ -55,7 +55,7 @@ const videoData = [
         uploadDate: '5개월 전'
     },
     {
-        index: 6,
+        videoId: 6,
         adress: "https://www.youtube.com/watch?v=tuH1ZTl9s9Q",
         thumbnail: 'https://img.youtube.com/vi/tuH1ZTl9s9Q/mqdefault.jpg',
         duration: '4:48',
@@ -66,7 +66,7 @@ const videoData = [
         uploadDate: '2주 전'
     },
     {
-        index: 7,
+        videoId: 7,
         adress: "https://www.youtube.com/watch?v=BXBLdyB05QM",
         thumbnail: 'https://img.youtube.com/vi/BXBLdyB05QM/mqdefault.jpg',
         duration: '2:33:11',
@@ -77,7 +77,7 @@ const videoData = [
         uploadDate: '3개월 전'
     },
     {
-        index: 8,
+        videoId: 8,
         adress: "https://www.youtube.com/watch?v=FFOjtjQAmBM",
         thumbnail: 'https://img.youtube.com/vi/FFOjtjQAmBM/mqdefault.jpg',
         duration: '27:06',

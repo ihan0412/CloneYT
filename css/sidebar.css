@@ -22,7 +22,6 @@ body {
     width: 100%;
     z-index: 1030; /*상단바를 위로 보냄*/
     background-color: #0f0f0f; /* 네비게이션 바 배경색 */
-    border-bottom: 1px solid #303030; /* 하단 경계선 */
     padding: 0.5rem 0rem;
 }
 

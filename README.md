@@ -50,3 +50,11 @@ https://inpa.tistory.com/entry/BootStrap5-%F0%9F%93%9A-%EB%B0%98%EC%9D%91%ED%98%
     </div>
 </div>
 ```
+
+<pre>
+7.30
+상단 navbar 버튼 추가 하기
+
+innerHTML 위험성 & 예방 방법
+https://velog.io/@lybell_4rt/XSS%EB%A5%BC-%EC%95%84%EC%8B%9C%EB%82%98%EC%9A%94feat.-innerHTML%EC%9D%98-%EC%9C%84%ED%97%98%EC%84%B1 
+</pre>

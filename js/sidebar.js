@@ -68,7 +68,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasYoutube"
                         class="btn-close me-3"
                         aria-controls="offcanvasYoutube" data-bs-dismiss="offcanvas" aria-label="Close">
-                    <!--onclick="document.getElementById(offcanvasYoutube).hide()"-->
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <img class="ytlogo" src="img/youtube_logo.png" alt="YouTube Logo">
@@ -266,8 +265,10 @@ document.addEventListener('DOMContentLoaded', () => {
             </ul>
         </div>
     </div>
-
-    <!--축소 사이드바-->
+    
+    <!--
+    사이드 바 토글 구현을 위해 사이드 바 각각 구현
+    축소 사이드바-->
     <div class="reduce-sidebar" id="reduceSidebar">
         <div class="py-2">
             <ul class="nav flex-column">
@@ -486,22 +487,20 @@ document.addEventListener('DOMContentLoaded', () => {
             </ul>
         </div>
     </div>
-    
-    
     `;
     sidebarGrid.appendChild(sideDiv);
 
-
-    // 이제 사이드바가 DOM에 있으므로, 이벤트 리스너를 연결합니다.
+    // 사이드 바 토글버튼 이벤트 리스너 연결
     const sidebarToggle = document.getElementById('sidebarToggle');
     const body = document.body;
 
-    // 초기 상태 설정 (필요한 경우, 그렇지 않으면 CSS로 기본 적용)
+    // 초기 상태 설정 - 처음엔 확장 사이드 바 클래스 삽입
     body.classList.add('expanded-sidebar');
     body.classList.remove('reduced-sidebar');
 
     if (sidebarToggle) {
         sidebarToggle.addEventListener('click', function () {
+            // 버튼 클릭시 toggle 메소드로 클래스 교체
             body.classList.toggle('reduced-sidebar');
             body.classList.toggle('expanded-sidebar');
         });

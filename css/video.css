@@ -1,0 +1,186 @@
+.main-content {
+    padding: 15px;
+}
+
+.related-content,
+.comments-section {
+    min-width: 380px;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #0f0f0f;
+    border-radius: 8px;
+}
+
+
+@media (min-width: 992px) {
+    .main-content {
+        padding: 20px;
+    }
+
+    .comments-section {
+        margin-top: 25px;
+    }
+
+    .related-content {
+        margin-top: 0;
+        margin-left: 20px;
+    }
+}
+
+.channel-profile-img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+@media (min-width: 1200px) {
+}
+
+.sub-count {
+    font-size: 0.85em;
+    color: #aaaaaa;
+}
+
+.subscribe-btn {
+    background-color: white;
+    color: black;
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: none;
+    white-space: nowrap; /* 텍스트 줄바꿈 방지 */
+    flex-shrink: 0; /* flex item에서 크기가 줄어들지 않도록 */
+}
+
+.subscribe-btn:hover {
+    background-color: lightgray;
+}
+
+/* 액션 버튼 그룹 컨테이너 (좋아요, 공유 등) */
+.action-buttons .btn {
+    background-color: #2f2f2f;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.action-buttons .btn:hover {
+    background-color: #3e3e3e;
+    color: #ffffff;
+}
+
+/* 좋아요/싫어요 버튼 그룹의 가운데 구분선 */
+.like-dislike-group .btn:first-child {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: 1px solid rgba(255, 255, 255, 0.2); /* 구분선 */
+}
+
+.like-dislike-group .btn:last-child {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+/* 드롭다운 토글 버튼 (점 3개 버튼) */
+.action-buttons .dropdown-toggle {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    justify-content: center;
+}
+
+.action-buttons .dropdown-toggle::after {
+    display: none;
+}
+
+/* 드롭다운 메뉴 스타일 */
+.dropdown-menu-dark {
+    background-color: #282828;
+    border: 1px solid #424242;
+}
+
+.dropdown-menu-dark .dropdown-item {
+    color: #ffffff;
+}
+
+.dropdown-menu-dark .dropdown-item:hover {
+    background-color: #383838;
+}
+
+.dropdown-menu-dark .dropdown-divider {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+
+.video-details-info {
+    background-color: #212121;
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 15px;
+    font-size: 0.9rem;
+}
+
+/* 설명 텍스트 (줄임말 기능) */
+.description-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* 기본 3줄로 제한 */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: pre-wrap;
+}
+
+.description-text.expanded {
+    -webkit-line-clamp: unset; /*위의 기본 3줄 스타일 제거*/
+    overflow: visible;
+}
+
+.show-more-btn {
+    background: none;
+    border: none;
+    color: #aaaaaa;
+    font-weight: 600;
+    padding: 0;
+    margin-left: 5px;
+}
+
+.show-more-btn:hover {
+    text-decoration: underline;
+}
+
+
+#commentInput {
+    height: 40px;
+    background-color: #0f0f0f;
+    color: white;
+    border: none;
+    border-bottom: 1px solid #424242;
+    resize: none;
+    box-shadow: none;
+    padding-top: 0.75rem;
+    padding-bottom: 0.25rem;
+    overflow: hidden;
+}
+
+#commentInput:focus {
+    /* 포커스 시에도 css 가 변하지 않게 */
+    background-color: #0f0f0f !important;
+    color: white !important;
+    border-color: #aaaaaa !important;
+    box-shadow: none !important;
+}
+
+.comment-input-container .form-control::placeholder {
+    color: #CCCCCC;
+}
+
+.comment-button .btn {
+    border-color: #aaaaaa;
+    color: #aaaaaa;
+}

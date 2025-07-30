@@ -1,9 +1,9 @@
 html {
-    font-size: 16px; /* 전체 글자 크기 */
+    font-size: 16px;
 }
 body {
     background-color: #0f0f0f; /* 배경색 */
-    color: #ffffff; /* 기본 글자색 */
+    color: #ffffff;
     overflow-x: hidden;
     padding-top: 60px; /*상단바 안겹차게 하기 위한 padding*/
 }
@@ -20,21 +20,21 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1030; /*상단바를 위로 보냄*/
-    background-color: #0f0f0f; /* 네비게이션 바 배경색 */
+    z-index: 1030; /*영향 받지 않기 위해 상단바를 위로 보냄*/
+    background-color: #0f0f0f;
     padding: 0.5rem 0rem;
 }
 
 /*토글 버튼*/
 .navbar-toggler {
     border-radius: 50%; /* 둥근 모양 */
-    border: none; /* 테두리 제거 */
+    border: none;
     outline: none;
     width: 40px;
     height: 40px;
-    display: flex; /* 내부 아이콘을 가운데 정렬하기 위해 flexbox 사용 */
-    justify-content: center; /* 가로 가운데 정렬 */
-    align-items: center; /* 세로 가운데 정렬 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 0; /* 내부 패딩 제거 (아이콘이 꽉 차게 보이도록) */
     background-color: transparent; /* 배경색 투명하게 */
 }
@@ -91,18 +91,19 @@ body {
 
 /* -------------------- 드롭다운 메뉴 스타일 (사용자 정보)-------------------- */
 .dropdown-menu {
-    background-color: #282828; /* 드롭다운 배경색 */
-    border: 1px solid #424242; /* 드롭다운 테두리 */
+    background-color: #282828;
+    border: 1px solid #424242;
 }
 
 .dropdown-item {
-    color: #ffffff; /* 드롭다운 아이템 글자색 */
+    color: #ffffff;
 }
 
 .dropdown-item:hover {
-    background-color: #383838; /* 드롭다운 아이템 호버 시 배경색 */
+    background-color: #383838;
     color: #ffffff;
 }
+
 /*드롭다운 화살표 숨기기*/
 .dropdown-toggle::after {
     display: none;
@@ -153,9 +154,9 @@ body {
     background-color: #0f0f0f;
     color: #ffffff;
     position: fixed;
-    left: 0; /*왼쪽 사이드바*/
-    height: 100vh; /* 전체 높이 */
-    overflow-y: auto; /* 내용이 넘칠 경우 스크롤 */
+    left: 0;
+    height: 100vh;
+    overflow-y: auto;
 }
 
 /* 확장 사이드바 스타일 */
@@ -219,7 +220,6 @@ body {
     margin-right: 0 !important; /* me-3 클래스에 의해 적용된 margin-right를 0으로 재정의 */
     margin-bottom: 5px;
 }
-
 
 /* body 클래스에 따른 사이드바 표시/숨김 및 메인 콘텐츠 마진 조정 */
 body.expanded-sidebar .expand-sidebar {
@@ -302,7 +302,6 @@ body.reduced-sidebar .main-content {
     }
 
     /* offcanvas 버튼 focus 지우기*/
-    /* offcanvas 버튼 focus 지우기*/
     .btn-close:hover,
     .btn-close:focus,
     .btn-close:active {
@@ -333,12 +332,12 @@ body.reduced-sidebar .main-content {
 
 .reduce-sidebar::-webkit-scrollbar-track,
 .expand-sidebar::-webkit-scrollbar-track {
-    background: #282828; /* 스크롤바 트랙(바탕) 색상 */
-    border-radius: 10px; /* 트랙 모서리 둥글게 (선택 사항) */
+    background: #282828;
+    border-radius: 10px;
 }
 .reduce-sidebar::-webkit-scrollbar-thumb,
 .expand-sidebar::-webkit-scrollbar-thumb {
-    background-color: #606060; /* 스크롤바 썸(움직이는 부분) 색상 */
-    border-radius: 10px; /* 썸 모서리 둥글게 */
-    border: 2px solid #282828; /* 썸 주위에 트랙 색상과 동일한 테두리 (선택 사항, 깔끔하게 보이도록) */
+    background-color: #606060;
+    border-radius: 10px;
+    border: 2px solid #282828;
 }

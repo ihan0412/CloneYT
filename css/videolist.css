@@ -7,15 +7,24 @@
 }
 
 .video-card:hover {
-    background-color: white; /*아직 어떻게 구현할지 정하지 못함*/
+    transition: 0.25s ease-out;
+    transform: scale(1.025);
+    z-index: 1080;
+    background-color: #272727;
+}
+
+.video-card-horizontal:hover {
+    transition: 0.25s ease-out;
+    transform: scale(1.025);
+    z-index: 1080;
+    background-color: #272727;
 }
 
 .channel-profile-pic {
-    width: 36px; /* 채널 사진 크기 */
+    width: 36px;
     height: 36px;
     object-fit: cover; /* 이미지 비율 유지 */
 }
-
 
 .video-card .card-title {
     font-size: 1rem;
@@ -47,4 +56,25 @@
 
 .dropdown-toggle::after {
     display: none; /* Bootstrap 기본 드롭다운 화살표 제거 */
+}
+
+
+/*--------------------------------horizontal style*/
+.video-card-horizontal {
+    min-width: 320px;
+}
+
+/* 제목 2줄 말줄임표 처리 */
+.video-card-horizontal h6 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; /* 2줄까지만 표시하고 넘치면 ... */
+    overflow: hidden;
+    text-overflow: ellipsis; /* IE 및 Edge를 위한 대체 */
+    word-break: break-all; /* 단어가 길어서 넘치는 경우 강제 줄 바꿈 */
+}
+
+.video-card-horizontal .flex-grow-1 {
+    white-space: nowrap; /* 텍스트를 한 줄로 강제 */
+    overflow: hidden;
 }

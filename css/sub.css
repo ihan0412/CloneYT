@@ -5,3 +5,9 @@
 .m-3 {
     font-weight: bold;
 }
+
+.video-card-horizontal {
+    display: flex;
+    justify-content: center;
+    max-width: 1400px;
+}

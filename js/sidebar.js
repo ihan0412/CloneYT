@@ -27,32 +27,93 @@ document.addEventListener('DOMContentLoaded', () => {
             <!--  검색 바  -->
             <form class="d-flex search-bar" role="search">
                 <input class="form-control me-0" type="search" placeholder="검색" aria-label="Search">
-                <button class="btn" type="submit">
+                <button class="btn" type="button">
                     <img src="img/search.png">
                 </button>
             </form>
+            
+            <div class="d-flex align-items-center ms-3 me-3">
+                <button class="btn btn-link text-white p-2" type="button" aria-label="음성 검색">
+                    <i class="bi bi-mic-fill" style="font-size: 1.2rem;"></i>
+                </button>
+                <button class="btn btn-link text-white p-2" type="button" aria-label="만들기">
+                    <i class="bi bi-camera-video-fill" style="font-size: 1.2rem;"></i>
+                </button>
+                <button class="btn btn-link text-white p-2 position-relative" type="button" aria-label="알림">
+                    <i class="bi bi-bell-fill" style="font-size: 1.2rem;"></i>
+                </button>
+            </div>
 
-            <!--  개인정보 드롭다운  -->
-            <div class="d-flex ms-3">
-                <div class="dropdown">
-                    <button class="btn btn-link text-white dropdown-toggle" type="button" id="dropdownUser"
+            <div class="d-flex<div class="d-flex ms-3">
+                <div class="dropdown user-dropdown">
+                    <button class="btn btn-link text-white dropdown-toggle p-0" type="button" id="dropdownUser"
                             data-bs-toggle="dropdown" aria-expanded="false">
-                        <div class="profile-img-placeholder">U</div>
+                        <img src="img/doguser.png" alt="프로필" class="profile-thumbnail">
                     </button>
-                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownUser">
-                        <li><h6 class="dropdown-header">사용자 이름</h6></li>
+                    <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end" aria-labelledby="dropdownUser">
+                        <li>
+                            <div class="d-flex align-items-center dropdown-header user-info-header">
+                                <img src="img/doguser.png" alt="프로필" class="profile-thumbnail-lg me-2">
+                                <div>
+                                    <h6 class="mb-0 text-white">ihan0412</h6>
+                                    <p class="mb-0">@ihan0412</p>
+                                </div>
+                            </div>
+                        </li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
-                        <li><a class="dropdown-item" href="#">내 채널</a></li>
-                        <li><a class="dropdown-item" href="#">YouTube Studio</a></li>
-                        <li><a class="dropdown-item" href="#">계정 전환</a></li>
-                        <li><a class="dropdown-item" href="#">로그아웃</a></li>
+                        <li><a class="dropdown-item" href="#">
+                            <i class="bi bi-person-circle me-2"></i>Google 계정
+                        </a></li>
+                        <li><a class="dropdown-item" href="#">
+                            <i class="bi bi-arrow-left-right me-2"></i>계정 전환
+                        </a></li>
+                        <li><a class="dropdown-item" href="#">
+                            <i class="bi bi-box-arrow-right me-2"></i>로그아웃
+                        </a></li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
-                        <li><a class="dropdown-item" href="#">설정</a></li>
-                        <li><a class="dropdown-item" href="#">고객센터</a></li>
+                        <li><a class="dropdown-item" href="#">
+                            <i class="bi bi-youtube me-2"></i>YouTube 스튜디오
+                        </a></li>
+                        <li><a class="dropdown-item" href="#">
+                            <i class="bi bi-currency-dollar me-2"></i>구매 항목 및 멤버십
+                        </a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">
+                            <i class="bi bi-person-fill-lock me-2"></i>YouTube의 내 데이터
+                        </a></li>
+                        <li><a class="dropdown-item" href="#">
+                            <i class="bi bi-moon me-2"></i>디자인: 어두운 테마
+                        </a></li>
+                        <li><a class="dropdown-item" href="#">
+                            <i class="bi bi-globe me-2"></i>언어: 한국어
+                        </a></li>
+                        <li><a class="dropdown-item" href="#">
+                            <i class="bi bi-shield-fill-check me-2"></i>제한 모드: 사용 안 함
+                        </a></li>
+                        <li><a class="dropdown-item" href="#">
+                            <i class="bi bi-geo-alt-fill me-2"></i>위치: 한국
+                        </a></li>
+                        <li><a class="dropdown-item" href="#">
+                            <i class="bi bi-keyboard me-2"></i>단축키
+                        </a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">
+                            <i class="bi bi-gear-fill me-2"></i>설정
+                        </a></li>
+                        <li><a class="dropdown-item" href="#">
+                            <i class="bi bi-question-circle-fill me-2"></i>고객센터
+                        </a></li>
+                        <li><a class="dropdown-item" href="#">
+                            <i class="bi bi-chat-dots-fill me-2"></i>의견 보내기
+                        </a></li>
                     </ul>
                 </div>
             </div>

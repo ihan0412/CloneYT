@@ -25,27 +25,26 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
 
             <!--  검색 바  -->
-            <form class="d-flex search-bar" role="search">
-                <input class="form-control me-0" type="search" placeholder="검색" aria-label="Search">
-                <button class="btn" type="button">
-                    <img src="img/search.png">
-                </button>
-            </form>
-            
-            <div class="d-flex align-items-center ms-3 me-3">
-                <button class="btn btn-link text-white p-2" type="button" aria-label="음성 검색">
+            <div class="d-flex align-items-center flex-grow-1 justify-content-center">
+                <form class="d-flex search-bar" role="search">
+                    <input class="form-control me-0 flex-grow-1" type="search" placeholder="검색" aria-label="Search">
+                    <button class="btn" type="button">
+                        <img src="img/search.png">
+                    </button>
+                </form>
+                <button class="btn btn-link text-white align-items-start other-button" type="button" aria-label="음성 검색">
                     <i class="bi bi-mic-fill" style="font-size: 1.2rem;"></i>
-                </button>
-                <button class="btn btn-link text-white p-2" type="button" aria-label="만들기">
-                    <i class="bi bi-camera-video-fill" style="font-size: 1.2rem;"></i>
-                </button>
-                <button class="btn btn-link text-white p-2 position-relative" type="button" aria-label="알림">
-                    <i class="bi bi-bell-fill" style="font-size: 1.2rem;"></i>
                 </button>
             </div>
 
-            <div class="d-flex<div class="d-flex ms-3">
-                <div class="dropdown user-dropdown">
+            <div class="d-flex ms-auto align-items-center">
+                <button class="btn btn-link text-white p-2 other-button" type="button" aria-label="만들기">
+                    <i class="bi bi-plus" style="font-size: 1.2rem;"></i>만들기
+                </button>
+                <button class="btn btn-link text-white p-2 position-relative" type="button" aria-label="알림">
+                    <i class="bi bi-bell" style="font-size: 1.2rem;"></i>
+                </button>
+                <div class="dropdown user-dropdown ms-3">
                     <button class="btn btn-link text-white dropdown-toggle p-0" type="button" id="dropdownUser"
                             data-bs-toggle="dropdown" aria-expanded="false">
                         <img src="img/doguser.png" alt="프로필" class="profile-thumbnail">

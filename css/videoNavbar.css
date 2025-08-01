@@ -55,15 +55,9 @@ body {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-.navbar-brand {
-    margin-right: 100px;
-}
-
-
 .search-bar {
     flex-grow: 1;
     max-width: 600px;
-    margin: 0 auto; /* 가운데 정렬 */
     border-radius: 20px;
     background-color: #0f0f0f;
     border: 1px solid #424242;
@@ -246,4 +240,23 @@ text-align: center;
 .user-dropdown .dropdown-header + .dropdown-divider + li:first-of-type > .dropdown-item:hover {
     background-color: transparent;
     text-decoration: underline;
+}
+
+.other-button {
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: #383838;
+    border-radius: 50px;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+}
+
+.other-button:hover {
+    background-color: #555;
+}
+
+.voice-search {
+    display: flex;
+    align-items: center;
 }

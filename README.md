@@ -1,5 +1,19 @@
 # 🔗[CloneYT](https://ihan0412.github.io/CloneYT/ "Youtube-clone") ▶️
 
+[📋요구사항](#a-namedemanda-요구사항)
+
+[🎯목표](#a-nametargeta-목표)
+
+[📚기술 스택 & 개발 환경](#a-namestacka-기술-스택--개발-환경)
+
+[📦디렉토리 구조](#a-namestructurea-디렉토리-구조)
+
+[📸구현 + ⚙️기능 설명](#a-nameimplementa-구현--기능-설명)
+
+[🙄회고](#a-namediarya-회고)
+
+[🔗참고 문헌](#)
+
 <br>
 
 ## ▶️ Youtube Clone Coding 개요
@@ -8,7 +22,7 @@
 
 <br>
 
-### 📋요구사항
+### <a name="demand"></a> 📋요구사항
 
 
 
@@ -51,7 +65,7 @@
 
 <br>
 
-### 🎯목표
+### <a name="target"></a> 🎯목표
 
 
 
@@ -64,7 +78,7 @@
 
 <br>
 
-### 📚기술 스택 & 개발 환경
+### <a name="stack"></a> 📚기술 스택 & 개발 환경
 
 
 
@@ -83,7 +97,7 @@
 
 <br>
 
-### 📦디렉토리 구조
+### <a name="structure"></a> 📦디렉토리 구조
 
 ```
 📦 CloneYT
@@ -113,7 +127,7 @@
 
 <br>
 
-## 📸구현 + ⚙️기능 설명
+## <a name="implement"></a> 📸구현 + ⚙️기능 설명
 
 #### 상단바 로고 ( 홈으로 이동 ) , 검색창, 드롭다운
 
@@ -151,21 +165,21 @@
 
 <br>
 
-## 🙄회고
+## <a name="diary"></a> 🙄회고
 
 
 
 
 <br>
 
-### 🤯어려웠던 점
+### <a name="hard"></a> 🤯어려웠던 점
 
 
 
 
 <br>
 
-### ✏️배운 점
+### <a name="learn"></a> ✏️배운 점
 
 
 

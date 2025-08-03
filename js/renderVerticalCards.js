@@ -3,8 +3,15 @@ import { videoData } from './videoData.js';
 document.addEventListener('DOMContentLoaded', () => {
     const videoGrid = document.querySelector('.video-list-vertical'); // 세로형 카드
 
+    const urlParams = new URLSearchParams(window.location.search);
+    const currentVideoId = urlParams.get('id'); // 쿼리스트링에서 id 값 추출
+
+
     if (videoGrid) { // 해당 요소가 존재할 때만 실행
         videoData.forEach(video => {
+            if (video.id == currentVideoId) {
+                return;
+            }
             const colDiv = document.createElement('div');
             colDiv.className = 'col-12 col-sm-6 col-lg-4 mb-4';
             // 인라인 이벤트 핸들러는 권장되지 않는 방식, 유지보수가 js 와 html 이 섞여 유지보수가 쉽지 않음

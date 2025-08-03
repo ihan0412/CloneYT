@@ -3,8 +3,16 @@ import { videoData } from './videoData.js';
 document.addEventListener('DOMContentLoaded', () => {
     const videoGrid = document.querySelector('.video-list-horizontal'); // 가로형 카드 (video 반응형 구현)
 
+    // 현재 동영상의 id
+    const urlParams = new URLSearchParams(window.location.search);
+    const currentVideoId = urlParams.get('id'); // 쿼리스트링에서 id 값 추출
+
     if (videoGrid) { // 해당 요소가 존재할 때만 실행
         videoData.forEach(video => {
+            // 같으면 건너뛰기
+            if (video.id == currentVideoId) {
+                return;
+            }
             const colDiv = document.createElement('div');
             colDiv.className = 'col-12 mb-3';
 

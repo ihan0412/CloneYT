@@ -20,6 +20,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="d-flex align-items-start video-card-horizontal">
                     <div class="position-relative me-3" style="flex-shrink: 0; width: 168px; height: 94px;">
                         <img src="${video.thumbnail}" class="img-fluid rounded" alt="${video.title} 썸네일">
+                        <iframe class="hover-iframe card-img-top rounded" src="${video.embedAddress}&mute=1" title="YouTube video player"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+                        </iframe>
+                        
                         <span class="video-duration position-absolute bottom-0 end-0 p-1 text-white rounded bg-dark opacity-75 me-1 mb-1">${video.duration}</span>
                     </div>
                     <div class="flex-grow-1">
@@ -40,10 +46,26 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
             `;
 
+            const originalSrc = video.embedAddress;
+            const videoIframe = colDiv.querySelector('.hover-iframe');
             // 생성된 horizontal 카드 요소에 이벤트 리스너 추가
             const videoCardHorizontal = colDiv.querySelector('.video-card-horizontal');
             if (videoCardHorizontal) {
                 videoCardHorizontal.style.cursor = 'pointer'; // 클릭 가능한 것처럼 보이도록 커서 변경
+
+                videoCardHorizontal.addEventListener('mouseenter', () => {
+                    const params = `autoplay=1&mute=1&controls=0&modestbranding=1`;
+                    const newSrc = originalSrc.includes('?') // 쿼리스트링 존재 여부 검사. 없으면 ?를 넣을 필요가 없어서
+                        ? `${originalSrc}&${params}`
+                        : `${originalSrc}?${params}`;
+                    videoIframe.src = newSrc;
+                });
+
+                // url 초기화로 속성 초기화
+                videoCardHorizontal.addEventListener('mouseleave', () => {
+                    videoIframe.src = originalSrc;
+                });
+
 
                 videoCardHorizontal.addEventListener('click', (event) => {
                     // 드롭다운 버튼 클릭시 페이지 이동 방지(이벤트 버블링)

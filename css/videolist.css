@@ -5,7 +5,8 @@
     background-color: transparent;
     color: #ffffff;
 }
-
+/*
+// 원래 hover 이벤트
 .video-card:hover {
     transition: 0.25s ease-out;
     transform: scale(1.025);
@@ -18,6 +19,48 @@
     transform: scale(1.025);
     z-index: 1080;
     background-color: #272727;
+}*/
+.video-card .position-relative {
+    position: relative;
+    overflow: hidden; /* iframe이 넘치지 않도록 숨김 */
+}
+
+.video-card .hover-iframe {
+    pointer-events: none; /*이벤트를 없애 썸네일 클릭시 비디오 화면으로*/
+    position: absolute; /* 부모 요소를 기준으로 절대 위치 지정 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0; /* 평소에는 투명하게 설정 */
+    transition: opacity 0.3s ease-in-out; /* 부드러운 전환 효과 */
+    z-index: 2; /* 섬네일 위에 올라오도록 설정 */
+    border: none;
+}
+
+.video-card .position-relative:hover .hover-iframe {
+    opacity: 1; /* 마우스 오버 시 iframe을 보이게 함 */
+}
+.video-card-horizontal .position-relative {
+    position: relative;
+    overflow: hidden; /* iframe이 넘치지 않도록 숨김 */
+}
+
+.video-card-horizontal .hover-iframe {
+    pointer-events: none; /*이벤트를 없애 썸네일 클릭시 비디오 화면으로*/
+    position: absolute; /* 부모 요소를 기준으로 절대 위치 지정 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0; /* 평소에는 투명하게 설정 */
+    transition: opacity 0.3s ease-in-out; /* 부드러운 전환 효과 */
+    z-index: 2; /* 섬네일 위에 올라오도록 설정 */
+    border: none;
+}
+
+.video-card-horizontal .position-relative:hover .hover-iframe {
+    opacity: 1; /* 마우스 오버 시 iframe을 보이게 함 */
 }
 
 .channel-profile-pic {

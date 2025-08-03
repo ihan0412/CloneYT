@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     if (dropdownMenu && dropdownMenu.contains(event.target)) { return; }
 
                     console.log(`Subscribed Video clicked! Title: ${video.title}, ID: ${video.id}`);
-                    window.location.href = `video.html?id=${video.id}`;
+                    window.location.href = `video.html?videoId=${video.id}`;
                 });
             }
 

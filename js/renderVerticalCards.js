@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const videoGrid = document.querySelector('.video-list-vertical'); // 세로형 카드
 
     const urlParams = new URLSearchParams(window.location.search);
-    const currentVideoId = urlParams.get('id'); // 쿼리스트링에서 id 값 추출
+    const currentVideoId = urlParams.get('videoId'); // 쿼리스트링에서 id 값 추출
 
 
     if (videoGrid) { // 해당 요소가 존재할 때만 실행
@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                     console.log(`Video clicked! Title: ${video.title}, ID: ${video.id}`);
                     // 페이지 이동
-                    window.location.href = `video.html?id=${video.id}`;
+                    window.location.href = `video.html?videoId=${video.id}`;
                 });
             }
 

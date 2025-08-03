@@ -3,7 +3,7 @@ import {videoData} from './videoData.js'; // videoData.js 파일 경로 확인 �
 // 비디오 데이터 로드 및 렌더링 함수
 document.addEventListener('DOMContentLoaded', () => {
     const urlParams = new URLSearchParams(window.location.search);
-    const videoId = urlParams.get('id'); // 쿼리스트링에서 id 값 추출
+    const videoId = urlParams.get('videoId'); // 쿼리스트링에서 id 값 추출
 
     // 추출된 ID로 videoData에서 해당 비디오 찾기
     const selectedVideo = videoData.find(video => video.id == videoId); // 일치하는 비디오 객체

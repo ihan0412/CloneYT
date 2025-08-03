@@ -18,6 +18,9 @@ body {
 
 /* -------------------- 네비게이션 바 스타일 -------------------- */
 .navbar {
+    min-width: 850px;
+    overflow: hidden;
+    flex-wrap: nowrap; /*상단바 flex 안되게*/
     position: fixed;
     top: 0;
     width: 100%;

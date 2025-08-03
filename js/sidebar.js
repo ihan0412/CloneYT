@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     sideDiv.className = 'bar';
 
     sideDiv.innerHTML = `
-        <nav class="navbar"> <!--navbar expend lg 는 햄버거 버튼이 사라지면 안되기 때문에 삭제-->
+    <nav class="navbar"> <!--navbar expend lg 는 햄버거 버튼이 사라지면 안되기 때문에 삭제-->
         <div class="container-fluid justify-content-between">
             <div class="d-flex align-items-center ">
                 <!--  offcanvas(작은화면) 사이드바 버튼  -->
